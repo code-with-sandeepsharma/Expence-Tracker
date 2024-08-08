@@ -1,0 +1,128 @@
+:root{
+    box-shadow: 1px,3px rgba(rgb(0, 255, 30),);
+}
+ *{
+    box-sizing: border-box;
+
+ }
+ body{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0%;
+    
+ }
+ .container{
+    margin: 30px;
+    width: 350;
+
+ }
+ h1{
+letter-spacing: 1px;
+margin: 0;
+ }
+ h3{
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin:40px  0 10px 
+ }
+ h4{
+    margin: 0;
+    text-transform: uppercase;
+ }
+ .inc-exp-container{
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin:  20px 0;
+ }
+ .inc-exp-container>div{
+    flex: 1;
+    text-align: center;
+
+ }
+ .inc-exp-container>div:first-of-type{
+    border-right:2px solid #dedede
+ }
+ .moneyplus{
+    color:rgb(191, 17, 17)
+ }
+ .moneyminus{
+    color:rgb(65, 42, 165)
+ }
+
+label{
+    display: inline-block;
+    margin: 10px 0;
+}
+input[type="text"],input[type="number"]{
+    border:1px solid #dedede;
+    border-radius: 2px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+.btn{
+    cursor: pointer;
+    background-color: rgb(197, 4, 4);
+    box-shadow: var(--box-shadow);
+    border: 0;
+    display: block;
+    font-size: 16px;
+    padding: 10px ;
+    margin: 10px 0 30px;
+    width: 100%;
+
+}
+
+.btn:focus,.delete-btn:focus{
+    outline:0;
+}
+.list{
+    list-style: none;
+    padding:0;
+    margin-bottom: 40px;
+}
+.list li{
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+}
+.list li.plus{
+    border-right:5px solid #2ecc71;
+}
+.list li.minus{
+    border-right: 5px solid  #c0392b;
+}
+.delete-btn{
+    cursor: pointer;
+    background-color: #f12812;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate( 100%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.list li :hover.delete-btn{
+    opacity: 1;
+    
+}
+
+
